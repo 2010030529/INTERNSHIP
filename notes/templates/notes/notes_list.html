@@ -1,0 +1,11 @@
+<html>
+<title>INERNSHIP</title>
+    <center>
+<h1>A website about Asgard</h1>
+<ul>
+    {% for note in notes %}
+    <button><a href="{%url 'notes.details' pk=note.id%}"><li>{{note.title}}</li></a></button>
+    {% endfor %}
+</ul>
+    </center>
+</html>
